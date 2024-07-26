@@ -6,11 +6,12 @@
 /*   By: lrossi-u <lrossi-u@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/04 13:27:27 by lrossi-u          #+#    #+#             */
-/*   Updated: 2024/07/24 17:18:01 by lrossi-u         ###   ########.fr       */
+/*   Updated: 2024/07/26 22:33:23 by lrossi-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include <limits.h>
 
 static int	count(int n)
 {
@@ -39,7 +40,7 @@ char	*ft_itoa(int n)
 {
 	char	*res;
 	int		counter;
-	int		n_mod;
+	long	n_mod;
 
 	n_mod = n;
 	counter = count(n);
